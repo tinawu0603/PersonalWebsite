@@ -1,5 +1,4 @@
-body
-{
+body {
     font-family: Yanone Kaffeesatz; color:dimgray;
     margin: 20;
 }
@@ -29,4 +28,32 @@ body
 .topnav a:hover {
   background-color: slategray;
   color:lightsteelblue;
+}
+/* unequal column widths */
+.column {
+  float: left;
+}
+/* left column */
+.column.left {
+  width: 20%;
+}
+/* middle column */
+.column.middle {
+  width: 40%;
+}
+/* right column */
+.column.right {
+  width: 40%;
+}
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* responsive layout */
+@@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
 }
