@@ -52,8 +52,8 @@ body {
   clear: both;
 }
 /* responsive layout */
-@@media (max-width: 600px) {
-  .column.side, .column.middle {
+@media (max-width: 600px) {
+  .column.middle, .column.right {
     width: 100%;
   }
 }
