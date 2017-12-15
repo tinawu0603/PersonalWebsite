@@ -60,8 +60,7 @@ body {
   clear: both;
 } */
 /* responsive layout */
-/* @media (max-width: 600px) {
-  .column.middle, .column.right {
+@media (max-width: 600px) {
+  .column.middle {
     width: 100%;
-  }
-} */
+}
