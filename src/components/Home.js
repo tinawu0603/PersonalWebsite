@@ -45,6 +45,7 @@ const ProfilePicture = styled.img`
   content: url(${ProfilePic});
   width: 150px;
   height: 150px;
+  padding: 0px;
 `;
 
 export default Home;
