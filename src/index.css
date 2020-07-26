@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Yanone+Kaffeesatz:wght@400;500;700&display=swap');
+
+.round {
+	border-radius: 50%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	margin-bottom: 20px;
+}
+
+li {
+	margin-left: 50px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+	cursor: pointer;
+}
+body {
+  background-color: #E6E6FA;
+}
+
+h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: normal;
+  font-size: 62px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 140%;
+}
+
+h2 {
+	font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 140%;
+}
+
+h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 140%;
+}
+
+p {
+	font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 140%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+	width: 100%;
+	padding: 0 10px;
+}
+
+.decoration {
+	padding: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #666;
+  page-break-inside: avoid;
+  font-size: 15px;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+}
