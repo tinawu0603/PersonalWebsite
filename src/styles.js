@@ -29,9 +29,8 @@ const FullPageContainer = styled.div`
 `;
 
 const SubPageContainer = styled(FullPageContainer)`
-  @media ${device.laptop} {
-    padding: 30px;
-  }
+  padding: 30px;
+  padding-bottom: 50px;
   @media ${device.tablet} {
     padding: 20px;
   }
