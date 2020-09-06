@@ -24,13 +24,14 @@ class AboutMe extends React.Component {
         </TitleContainer>
         <ContentContainer>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <Mark43Image class="center"/>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12">
               <h2>DevOps Engineer, Mark43</h2>
-              <p>Team: Platforms (Intern), CloudOps</p>
-              <p>Jun. 2019 - Aug. 2019 (Intern), Apr. 2020 - Present</p>
+              <SubText>Team: Platforms (Intern), CloudOps</SubText>
+              <SubText>Jun. 2019 - Aug. 2019 (Intern), Apr. 2020 - Present</SubText>
+              <br/>
               <ul>
                 <li>
                   Maintain AWS infrastructure with Terraform, Terragrunt, and Ansible
@@ -46,10 +47,11 @@ class AboutMe extends React.Component {
           </div>
           <hr></hr>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12">
               <h2>Software Engineering Intern, Datadog</h2>
-              <p>Team: Security Development</p>
-              <p>Aug. 2019 - Dec. 2019</p>
+              <SubText>Team: Security Development</SubText>
+              <SubText>Aug. 2019 - Dec. 2019</SubText>
+              <br/>
               <ul>
                 <li>
                   Automate API key rotation with AWS Lambda, encrypt using AWS KMS and store revoked keys in PostgreSQL in RDS and SSM
@@ -62,19 +64,20 @@ class AboutMe extends React.Component {
                 </li>
               </ul>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <DatadogImage class="center"/>
             </div>
           </div>
           <hr></hr>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <TripadvisorImage class="center"/>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12">
               <h2>CorpIT Operations Engineer Co-op, TripAdvisor</h2>
-              <p>Team: CorpIT Operations</p>
-              <p>Jul. 2018 - Dec. 2018</p>
+              <SubText>Team: CorpIT Operations</SubText>
+              <SubText>Jul. 2018 - Dec. 2018</SubText>
+              <br/>
               <ul>
                 <li>
                   Improve real-time monitoring of Palo Alto VPN and Pulse VPN usage through Grafana
@@ -97,6 +100,9 @@ class AboutMe extends React.Component {
 const TitleContainer = styled.div`
   text-align: center;
   padding-bottom: 50px;
+  @media ${device.mobile} {
+    padding-bottom: 0px;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -118,10 +124,26 @@ const BorderImage = styled.img`
   }
 `;
 
+const SubText = styled.p`
+	font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 140%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
+`;
+
 const CompanyImage = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
 
 const Mark43Image = styled(CompanyImage)`

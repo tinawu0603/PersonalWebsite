@@ -24,7 +24,7 @@ const FullPageContainer = styled.div`
     padding: 70px 20px;
   }
   @media ${device.mobile} {
-    padding: 10px 5px;
+    padding: 20px;
   }
 `;
 
@@ -35,7 +35,7 @@ const SubPageContainer = styled(FullPageContainer)`
     padding: 20px;
   }
   @media ${device.mobile} {
-    padding: 10px;
+    padding: 20px;
   }
 `;
 
