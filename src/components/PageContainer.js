@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import MyProjects from './MyProjects';
 import MyWritings from './MyWritings';
 import Nav from './Nav';
+import Elitism from './writings/Elitism';
 import { BGPurple } from '../styles';
 
 class PageContainer extends React.Component {
@@ -34,6 +35,11 @@ class PageContainer extends React.Component {
             exact={true}
             render={() =>
               <MyWritings />
+            } />
+            <Route path="/my-writings/elitism"
+            exact={true}
+            render={() =>
+              <Elitism />
             } />
           </Switch>
         </Router>

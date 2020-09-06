@@ -10,7 +10,7 @@ class Nav extends React.Component {
       <BorderContainer>
         <BGBlue>
           <NavContainer>
-          <NavLink to={`/`}>
+            <NavLink to={`/`}>
               <h3>Home</h3>
             </NavLink>
             <NavLink to={`/about-me`}>

@@ -1,3 +1,8 @@
+import React from 'react';
+import styled from 'styled-components';
+import { SubPageContainer } from '../../styles';
+import ReactMarkdown from 'react-markdown';
+
 const elitismMarkdown = `
 ## Elitism in Tech Hinders Diversity and Belonging
 
@@ -53,4 +58,23 @@ Wadhwa, V. (2014, January 27). Enough is enough, Silicon Valley must end its eli
 
 `;
 
-export { elitismMarkdown };
+class Elitism extends React.Component {
+
+  render() {
+    return (
+      <SubPageContainer>
+        <ContentContainer>
+          <ReactMarkdown source={elitismMarkdown} />
+        </ContentContainer>
+      </SubPageContainer>
+    )
+  }
+};
+
+const ContentContainer = styled.div`
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export default Elitism;
